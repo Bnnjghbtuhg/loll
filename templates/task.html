@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky AI - Ввод задачи</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="header">
+    <h1>Добро пожаловать в Lucky AI</h1>
+    <p>Искусственный интеллект для помощи с домашним заданием</p>
+  </div>
+  <div class="content">
+    <textarea id="user-input" placeholder="Введите ваше задание..."></textarea>
+    <button id="generate-btn">Сгенерировать решение, объяснение, ответ</button>
+    <div id="output-container" style="display: none;">
+      <h3>Результат:</h3>
+      <p id="output"></p>
+    </div>
+  </div>
+  <footer>
+    <p>2024 © Lucky AI</p>
+  </footer>
+</body>
+</html>
